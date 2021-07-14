@@ -82,7 +82,7 @@ type AddMessageProps = {
 const chats: Chat[] = [];
 
 @WebSocketGateway(8080, {
-  cors: { origin: 'http://172.20.10.5:3000', credentials: true },
+  cors: { origin: 'http://localhost:3000', credentials: true },
   allowEIO3: true,
 })
 export class ChatGateway
