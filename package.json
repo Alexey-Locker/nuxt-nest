@@ -1,0 +1,17 @@
+{
+  "name": "nuxt-nest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "npm run dev --prefix nuxt-client",
+    "server": "npm run start:dev --prefix server",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Alexey",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.2.0",
+    "vue-chat-scroll": "^1.4.0"
+  }
+}
